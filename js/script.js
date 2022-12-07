@@ -33,13 +33,13 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 
 2- verifico se il numero diviso 3 dà resto 0.
 2a- se vero, verifico se il numero diviso 5 dà resto 0.
-2b- se vero, stampo fizzbuzz a schermo.
-2c- se falso, stampo fizz a schermo.
+2b- se vero, stampo fizzbuzz in console.
+2c- se falso, stampo fizz in console.
 
 3- verifico se il numero diviso 5 dà resto 0.
-3a- se vero, stampo buzz a schermo.
+3a- se vero, stampo buzz in console.
 
-4- se è tutto falso, stampo un numero a schermo.
+4- se è tutto falso, stampo un numero in console.
 */
 
 //***************************************************************************************************
@@ -47,14 +47,33 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 //prendo l'elemento dal DOM
 const targetElement = document.getElementById("target");
 
-//variabile d'appoggio
-//let content = " ";
-
 //1- creo un ciclo da 1 a 100.
 
 for (let i = 1; i <= 100; i++) {
-  //content += " " + i;
-  console.log(i);
-}
+  //2- verifico se il numero diviso 3 dà resto 0.
 
-//targetElement.innerText = content;
+  if (i % 3 === 0) {
+    //2a- se vero, verifico se il numero diviso 5 dà resto 0.
+
+    if (i % 5 === 0) {
+      //2b- se vero, stampo fizzbuzz a schermo.
+
+      console.log("fizzbuzz");
+    } else {
+      //2c- se falso, stampo fizz a schermo.
+
+      console.log("fizz");
+    }
+  }
+
+  //3- verifico se il numero diviso 5 dà resto 0.
+  else if (i % 5 === 0) {
+    //3a- se vero, stampo buzz a schermo.
+
+    console.log("buzz");
+  } else {
+    //4- se è tutto falso, stampo un numero a schermo.
+
+    console.log(i);
+  }
+}
