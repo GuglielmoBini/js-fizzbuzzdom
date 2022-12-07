@@ -51,29 +51,23 @@ const targetElement = document.getElementById("target");
 
 for (let i = 1; i <= 100; i++) {
   //2- verifico se il numero diviso 3 dà resto 0.
-
   if (i % 3 === 0) {
     //2a- se vero, verifico se il numero diviso 5 dà resto 0.
-
     if (i % 5 === 0) {
       //2b- se vero, stampo fizzbuzz a schermo.
-
-      console.log("fizzbuzz");
+      targetElement.innerHTML += `<div class="col d-flex justify-content-center align-items-center my-4"><div class="custom-square d-flex justify-content-center align-items-center fizzbuzz">FIZZBUZZ</div></div>`;
     } else {
       //2c- se falso, stampo fizz a schermo.
-
-      console.log("fizz");
+      targetElement.innerHTML += `<div class="col d-flex justify-content-center align-items-center my-4"><div class="custom-square d-flex justify-content-center align-items-center fizz">FIZZ</div></div>`;
     }
   }
 
   //3- verifico se il numero diviso 5 dà resto 0.
   else if (i % 5 === 0) {
     //3a- se vero, stampo buzz a schermo.
-
-    console.log("buzz");
+    targetElement.innerHTML += `<div class="col d-flex justify-content-center align-items-center my-4"><div class="custom-square d-flex justify-content-center align-items-center buzz">BUZZ</div></div>`;
   } else {
     //4- se è tutto falso, stampo un numero a schermo.
-
-    console.log(i);
+    targetElement.innerHTML += `<div class="col d-flex justify-content-center align-items-center my-4"><div class="custom-square d-flex justify-content-center align-items-center number">${i}</div></div>`;
   }
 }

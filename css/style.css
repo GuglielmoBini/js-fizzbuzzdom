@@ -1,3 +1,28 @@
 body {
   background-color: blue;
+  color: white;
+  font-size: 24px;
+}
+
+.custom-square {
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 20px;
+  border: 3px solid lightgray;
+}
+
+.number {
+  background-color: lightseagreen;
+}
+
+.fizzbuzz {
+  background-color: darkorange;
+}
+
+.fizz {
+  background-color: darkred;
+}
+
+.buzz {
+  background-color: darkorchid;
 }
