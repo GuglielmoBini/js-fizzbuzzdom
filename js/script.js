@@ -41,3 +41,20 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 
 4- se è tutto falso, stampo un numero a schermo.
 */
+
+//***************************************************************************************************
+
+//prendo l'elemento dal DOM
+const targetElement = document.getElementById("target");
+
+//variabile d'appoggio
+//let content = " ";
+
+//1- creo un ciclo da 1 a 100.
+
+for (let i = 1; i <= 100; i++) {
+  //content += " " + i;
+  console.log(i);
+}
+
+//targetElement.innerText = content;
